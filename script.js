@@ -1,14 +1,12 @@
-function drawTree(x) {
-    var i = 0;
-    while (i <= 10) {
-        var star = " ";
+function drawTree(heightOfTree) {
 
-        for ( j = x ; j <= i ; j++) {
+    for (var i = 0; i <= heightOfTree; i++ ) {
+        var star = "";
+        for (var j = 0; j < i; j++) {
             star += "*";
         }
         console.log(star);
-        i++;
     }
 }
 
-drawTree(3);
+drawTree(10);
